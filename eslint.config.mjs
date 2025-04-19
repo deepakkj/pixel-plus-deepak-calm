@@ -6,9 +6,18 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 const compat = new FlatCompat({
-  baseDirectory: __dirname,
+  baseDirectory: __dirname
 });
 
-const eslintConfig = [...compat.extends("next/core-web-vitals")];
+const eslintConfig = [
+  ...compat.config({
+    extends: ["next/core-web-vitals", "plugin:prettier/recommended"]
+  }),
+  {
+    rules: {
+      'comma-dangle': ['error', 'never'] // Disallow trailing commas
+    }
+  }
+];
 
 export default eslintConfig;
