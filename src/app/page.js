@@ -1,6 +1,6 @@
 import HeroSection from '../components/Hero';
 import BenefitsSection from '../components/BenefitsSection';
-import ReviewsSection from '../components/Reviews';
+import ReviewsSection from '../components/ReviewsSection/ReviewsSection';
 import PricingSection from '../components/Pricing';
 import BlogSection from '../components/BlogSection';
 import FAQSection from '../components/FAQSection/FAQ';

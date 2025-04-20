@@ -1,0 +1,74 @@
+.reviewssection_background {
+    background: linear-gradient(rgba(226, 234, 255, 0) 0%, rgb(226, 234, 255) 100%);
+}
+.reviewssection_wrapper {
+    overflow: hidden;
+    width: 100%;
+}
+
+.reviewssection_wrapper_contentwrapper {
+    margin: 0px auto;
+    max-width: 1440px;
+    padding: 60px 20px 0px;
+    text-align: center;
+
+    @media only screen and (min-width: 1024px) {
+        padding: 0 136px 100px;
+    }
+}
+
+.reviewssection_heading {
+    color: rgb(26, 62, 111);
+    line-height: 150%;
+    margin: 0px;
+    font-size: 24px;
+    margin-bottom: 32px;
+    @media only screen and (min-width: 480px) {
+        margin: 0px;
+        line-height: 60px;
+        font-size: 24px;
+        margin-bottom: 32px;
+    }
+    @media only screen and (min-width: 1024px) {
+        font-size: 36px;
+        margin-bottom: 40px;
+        line-height: 60px;
+    }
+}
+
+.reviewssection_reviewItem {
+    background: linear-gradient(rgb(36, 119, 170) 0%, rgb(100, 97, 224) 100%);
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+    height: 100%;
+    padding: 40px 32px;
+    text-align: left;
+}
+
+.reviewssection_reviewItem_quote {
+    font-size: 20px;
+    line-height: 30px;
+    margin: 12px 0;
+    font-weight: 500;
+
+    @media only screen and (min-width: 1024px) {
+        font-size: 22.5px;
+    }
+}
+
+.reviewssection_reviewItem_author {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 24px;
+    margin: 0px;
+    margin-bottom: 12px;
+
+    @media only screen and (min-width: 480px) {
+        font-size: 1.125rem;
+        line-height: 28px;
+        margin: 0px;
+    }
+    @media only screen and (min-width: 1024px) {
+        margin-bottom: 12px;
+    }
+}
