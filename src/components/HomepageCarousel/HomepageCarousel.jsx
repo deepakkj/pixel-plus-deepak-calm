@@ -8,6 +8,8 @@ import styles from './HomepageCarousel.module.scss';
 import { getSlideOffset, getResponsiveValue, getSlideHeight, getSlideWidth } from './utils';
 
 const HomepageCarousel = ({
+    carouselClassName,
+    carouselNavClassName,
     slideItems,
     numSlides: _numSlides,
     slideGap: _slideGap,
@@ -62,12 +64,12 @@ const HomepageCarousel = ({
 
     return (
         <>
-            <ul className={styles.homepage_carousel_wrapper} style={{ height: slideHeight ? `${slideHeight}px` : 'auto' }} ref={carouselRef}>
+            <ul className={`${styles.homepage_carousel_wrapper} ${carouselClassName}`} style={{ height: slideHeight ? `${slideHeight}px` : 'auto' }} ref={carouselRef}>
                 {slideItems.map((item, index) => {
                     const isActive = currentSlideIndex <= index && currentSlideIndex > index - numCards;
                     return (
                         <li
-                            key={item.key}
+                            key={item.key || index}
                             aria-hidden={!isActive}
                             style={{
                                 width: `${slideWidth}px`,
@@ -91,6 +93,7 @@ const HomepageCarousel = ({
                 })}
             </ul>
             <CarouselNav
+                carouselNavClassName={carouselNavClassName}
                 numSlides={slideItems.length}
                 currentSlideIndex={currentSlideIndex}
                 setCurrentSlideIndex={setCurrentSlideIndex}

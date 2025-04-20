@@ -31,6 +31,7 @@ export function ArrowLeftIcon({ width = 96, height = 96, fill = 'currentColor', 
 	);
   }
 const HomepageCarouselNav = ({
+	carouselNavClassName,
 	numSlides,
 	currentSlideIndex,
 	setCurrentSlideIndex,
@@ -52,11 +53,11 @@ const HomepageCarouselNav = ({
 	};
 
 	return (
-		<ul className={styles.homepage_carouselnav_wrapper}>
+		<ul className={`${styles.homepage_carouselnav_wrapper} ${carouselNavClassName}`}>
 			<li>
 				<button
 					onClick={onPrev}
-					isDisabled={isAtBeginning}
+					disabled={isAtBeginning}
 					aria-label="previous"
 					className={styles.homepage_carouselnav_button_prev}
 				>
@@ -68,7 +69,7 @@ const HomepageCarouselNav = ({
 			<li>
 				<button
 					onClick={onNext}
-					isDisabled={isAtEnd}
+					disabled={isAtEnd}
 					aria-label="next"
 					className={styles.homepage_carouselnav_button_next}
 				>
