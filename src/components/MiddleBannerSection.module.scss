@@ -1,0 +1,22 @@
+.middleBannerSection {
+    height: 300px;
+    margin-bottom: 60px;
+    position: relative;
+    width: 100%;
+    z-index: 0;
+
+    @media only screen and (min-width: 1024px) {
+        height: 500px;
+        margin-bottom: 100px;
+    }
+    &::after {
+        background: linear-gradient(rgb(247, 247, 247) 0%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 75%, rgb(247, 247, 247) 100%);
+        inset: 0px;
+        content: "";
+        position: absolute;
+    }
+}
+
+.middleBannerSection__background {}
+
+.middleBannerSection__backgroundImage {}

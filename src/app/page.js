@@ -8,12 +8,14 @@ import FAQ from '../components/FAQ';
 import Footer from '../components/Footer';
 
 import styles from './homepage.module.scss';
+import MiddleBannerSection from '../components/MiddleBannerSection';
 
 export default function Home() {
   return (
     <main className={styles.homepage}>
       <Hero />
       <Benefits />
+      <MiddleBannerSection />
       <StoriesCarousel />
       <Reviews />
       <Pricing />
