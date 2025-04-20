@@ -122,7 +122,7 @@ const Footer = () => {
 
   return (
     <footer className={styles.footer}>
-      <div className={styles.footer_columnGrid} allowOverflow gridEl="ul">
+      <div className={styles.footer_columnGrid}>
         <ul className={styles.footer_columnGridItems}>
           {footerNavItems.map((section, idx) => (
             <li className={styles.footer_column} key={idx}>

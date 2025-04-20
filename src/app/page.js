@@ -3,7 +3,7 @@ import BenefitsSection from '../components/BenefitsSection';
 import ReviewsSection from '../components/Reviews';
 import PricingSection from '../components/Pricing';
 import BlogSection from '../components/BlogSection';
-import FAQSection from '../components/FAQ';
+import FAQSection from '../components/FAQSection/FAQ';
 import Footer from '../components/Footer';
 
 import styles from './homepage.module.scss';

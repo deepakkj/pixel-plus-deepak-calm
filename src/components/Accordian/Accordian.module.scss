@@ -1,0 +1,66 @@
+/* Accordion.module.scss */
+
+.accordion {
+  border-top: 1px solid #ccc;
+  margin-top: 1rem;
+}
+
+.item {
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 6px 0px;
+  text-align: left;
+
+  @media only screen and (min-width: 1024px) {
+    padding: 10px 0px;
+  }
+  & > .item-heading {
+    & > button {
+      width: 100%;
+    }
+  }
+
+}
+
+// .item-heading {
+//   border: 1px solid red;
+// }
+
+
+.itemBtn {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.itemBtn:hover {
+  background: #f3f3f3;
+}
+
+.itemContent {
+  transition: height 0.25s ease;
+}
+
+.itemPanel {
+  padding: 1rem;
+}
+
+.chevron {
+  margin-left: auto;
+  transition: transform 0.25s ease;
+}
+
+/* rotate the chevron when the <button> also has your expanded style */
+.itemBtnExpanded .chevron {
+  transform: rotate(180deg);
+}
+
+.answer {
+  /* any typography you want for the HTML block */
+  line-height: 1.5;
+  color: #333;
+}
