@@ -1,0 +1,126 @@
+.footer {
+    background-color: rgb(27, 34, 80);
+    padding: 48px 20px;
+
+    @media only screen and (min-width: 1024px) {
+        padding: 48px 0px;
+    }
+}
+
+.footer_columnGrid {
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    overflow: visible;
+    width: 100%;
+}
+
+.footer_columnGridItems {
+    display: grid;
+    gap: 0px 16px;
+    grid-template-columns: 1fr;
+    width: 100%;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+
+    @media only screen and (min-width: 480px) {
+        column-gap: 24px;
+        margin: 0px 24px;
+    }
+
+    @media only screen and (min-width: 768px) {
+        grid-template-columns: repeat(4, minmax(0px, 1fr));
+    }
+
+    @media only screen and (min-width: 1024px) {
+        column-gap: 36px;
+        max-width: 960px;
+        margin: 0px 36px;
+    }
+}
+
+.footer_column {
+    margin-bottom: 1rem;
+}
+
+.footer_column_title {
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    line-height: 150%;
+    margin-block: 0.5em;
+
+    @media only screen and (min-width: 480px) {
+        margin-block: 0.44em;
+        line-height: 28px;
+        font-size: 1.125rem;
+    }
+}
+
+.footer_column_items {
+    padding: 0px;
+    list-style: none;
+}
+
+.footer_column_child_item {
+    list-style: none;
+}
+
+.footer_list_item_cta {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 30px;
+    opacity: 0.8;
+    transition: 0.3s ease-out;
+    text-decoration: none;
+    color: #fff;
+
+    &:hover {
+        opacity: 0.5;
+    }
+}
+
+.footer_socialIconsColumn {
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    padding: 0px;
+    list-style: none;
+
+    @media only screen and (min-width: 768px) {
+        -webkit-box-pack: end;
+        justify-content: flex-end;
+    }
+}
+
+.footer_socialIcon_item {
+    display: block;
+    list-style: none;
+    margin-right: 18px;
+}
+
+.footer_socialIcon_item_cta {
+    opacity: 0.8;
+}
+
+.footer_socialIcon_item_icon {
+    fill: #fff;
+    width: 18px;
+    height: 18px;
+}
+
+.copyright {
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+    margin-top: 48px;
+    opacity: 0.5;
+    color: #fff;
+
+    @media only screen and (max-width: 767px) {
+        margin: 22px auto;
+        align-content: center;
+    }
+}

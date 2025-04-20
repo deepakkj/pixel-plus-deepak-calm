@@ -1,0 +1,164 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@font-face {
+  font-family: 'Avenir Next';
+  src: local("☺︎"), url(/fonts/AvenirNext-Light.woff2) format("woff2"), url(/fonts/AvenirNext-Light.woff) format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap
+}
+
+@font-face {
+  font-family: 'Avenir Next';
+  src: local("☺︎"), url(/fonts/AvenirNext-LightItalic.woff2) format("woff2"), url(/fonts/AvenirNext-LightItalic.woff) format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap
+}
+
+@font-face {
+  font-family: 'Avenir Next';
+  src: local("☺︎"), url(/fonts/AvenirNext-Regular.woff2) format("woff2"), url(/fonts/AvenirNext-Regular.woff) format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap
+}
+
+@font-face {
+  font-family: 'Avenir Next';
+  src: local("☺︎"), url(/fonts/AvenirNext-RegularItalic.woff2) format("woff2"), url(/fonts/AvenirNext-RegularItalic.woff) format("woff");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap
+}
+
+@font-face {
+  font-family: 'Avenir Next';
+  src: local("☺︎"), url(/fonts/AvenirNext-Medium.woff2) format("woff2"), url(/fonts/AvenirNext-Medium.woff) format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap
+}
+
+@font-face {
+  font-family: 'Avenir Next';
+  src: local("☺︎"), url(/fonts/AvenirNext-MediumItalic.woff2) format("woff2"), url(/fonts/AvenirNext-MediumItalic.woff) format("woff");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap
+}
+
+@font-face {
+  font-family: 'Avenir Next';
+  src: local("☺︎"), url(/fonts/AvenirNext-Demi.woff2) format("woff2"), url(/fonts/AvenirNext-Demi.woff) format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap
+}
+
+@font-face {
+  font-family: 'Avenir Next';
+  src: local("☺︎"), url(/fonts/AvenirNext-DemiItalic.woff2) format("woff2"), url(/fonts/AvenirNext-DemiItalic.woff) format("woff");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap
+}
+
+@font-face {
+  font-family: Century;
+  src: url(/fonts/Century-Regular.woff2) format("woff2"), url(/fonts/Century-Regular.woff) format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap
+}
+
+@font-face {
+  font-family: Century;
+  src: url(/fonts/Century-Italic.woff2) format("woff2"), url(/fonts/Century-Italic.woff) format("woff");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap
+}
+
+@font-face {
+  font-family: ITC Souvenir;
+  src: url(/fonts/ITCSouvenir-Regular.woff2) format("woff2"), url(/fonts/ITCSouvenir-Regular.woff) format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap
+}
+
+@font-face {
+  font-family: Neue Plak;
+  src: url(/fonts/NeuePlak-WideBlack.woff2) format("woff2"), url(/fonts/NeuePlak-WideBlack.woff) format("woff");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap
+}
+
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+html,
+body {
+  font-size: 16px;
+  padding: 0px;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: "Avenir Next", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0px;
+  padding: 0px;
+}
+
+h1 {
+  font-size: 2.75rem;
+  font-weight: bold;
+
+  @media only screen and (min-width: 480px) {
+    font-size: 3.09375rem;
+  }
+}
+
+h2 {
+  font-weight: bold;
+}
+
+
+p {
+  font-size: 1rem;
+
+  @media only screen and (min-width: 480px) {
+    font-size: 1.125rem;
+  }
+}

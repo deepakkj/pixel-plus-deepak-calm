@@ -1,0 +1,4 @@
+{
+  "prettier.trailingComma": "none",
+  "eslint.experimental.useFlatConfig": true
+}
