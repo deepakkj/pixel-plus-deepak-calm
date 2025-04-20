@@ -1,10 +1,9 @@
-import Hero from '../components/Hero';
-import Benefits from '../components/Benefits';
-import StoriesCarousel from '../components/StoriesCarousel';
-import Reviews from '../components/Reviews';
-import Pricing from '../components/Pricing';
+import HeroSection from '../components/Hero';
+import BenefitsSection from '../components/BenefitsSection';
+import ReviewsSection from '../components/Reviews';
+import PricingSection from '../components/Pricing';
 import BlogSection from '../components/BlogSection';
-import FAQ from '../components/FAQ';
+import FAQSection from '../components/FAQ';
 import Footer from '../components/Footer';
 
 import styles from './homepage.module.scss';
@@ -13,14 +12,13 @@ import MiddleBannerSection from '../components/MiddleBannerSection';
 export default function Home() {
   return (
     <main className={styles.homepage}>
-      <Hero />
-      <Benefits />
+      <HeroSection />
+      <BenefitsSection />
       <MiddleBannerSection />
-      <StoriesCarousel />
-      <Reviews />
-      <Pricing />
+      <ReviewsSection />
+      <PricingSection />
       <BlogSection />
-      <FAQ />
+      <FAQSection />
       <Footer />
     </main>
   );
