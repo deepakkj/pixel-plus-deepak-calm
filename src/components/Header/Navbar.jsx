@@ -50,7 +50,7 @@ export default function Navbar() {
             aria-label="main navigation"
         >
             <div className={styles.navbarBrand}>
-                <Link href="/" className={`${styles.navbarItem} ${styles.logoItem}`}>
+                <Link href="/" className={`${styles.navbarItem} ${styles.logoItem} ${menuOpen ? styles.isActive : ''}`}>
                     <img
                         src={isTop ? '/calm-text-white-logo.svg' : '/calm-text-logo.svg'}
                         width={64}
@@ -60,7 +60,7 @@ export default function Navbar() {
                     />
                 </Link>
                 <button
-                    className={`${styles.burger} ${menuOpen ? styles.isActive : ''}`}
+                    className={`${styles.burger} ${isTop ? styles.colorWhite : styles.colorBlack} ${menuOpen ? styles.isActive : ''}`}
                     aria-label="menu"
                     aria-expanded={menuOpen}
                     onClick={handleToggle}

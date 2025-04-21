@@ -1,10 +1,28 @@
 
 # pixel-plus-deepak-calm
-A clone of the Calm website Homepage developed as part of the Pixel Plus Hackathon
+A clone of the Calm website Homepage developed as part of the Pixel Plus Hackathon.
 
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+
+Original Website Link: [calm.com](https://www.calm.com/)
+
+This app is hosted at: [pixel-plus-deepak-calm](https://pixel-plus-deepak-calm.vercel.app/)
+
+## Description
+The scope of this application is only the homepage of the calm.com
+It tries to mimick pixel perfection.
+It does not integrate with any backend servers or apis.
+It is only the frontend that is rendered via Next Js.
+
+## Bonus
+This app has special Bonus feature called as - 'Breathe Easy' which is not found in the original site.
+This feature helps the user to control their anger and manage their breathing. 
+
+PLEASE TRY THIS OUT and let me know if this has helped you or not.
+
+
+## Getting Started Locally
 
 First, run the development server:
 
@@ -24,17 +42,15 @@ You can start editing the page by modifying `app/page.js`. The page auto-updates
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
+## Tech Stack
+React Js
+Next Js
+SCSS
+Tailwind CSS
+Vercel for hosting the app
 
-To learn more about Next.js, take a look at the following resources:
+## License
+MIT License
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Contact Details
+You can reach me at my email at [Deepak Kumar Jain](mailto:deepakkumarjain21@gmail.com)
