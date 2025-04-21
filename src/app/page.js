@@ -9,12 +9,16 @@ import Footer from '../components/Footer';
 import styles from './homepage.module.scss';
 import MiddleBannerSection from '../components/MiddleBannerSection';
 import Navbar from '../components/Header/Navbar';
+import BreathingWidget from '../components/BreathingWidget/BreathingWidget';
 
 export default function Home() {
   return (
     <main className={styles.homepage}>
       <Navbar theme="transparent" />
       <HeroSection />
+      <section className="my-12 flex justify-center">
+          <BreathingWidget />
+        </section>
       <BenefitsSection />
       <MiddleBannerSection />
       <ReviewsSection />
