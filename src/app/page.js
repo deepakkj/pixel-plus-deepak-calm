@@ -8,10 +8,12 @@ import Footer from '../components/Footer';
 
 import styles from './homepage.module.scss';
 import MiddleBannerSection from '../components/MiddleBannerSection';
+import Navbar from '../components/Header/Navbar';
 
 export default function Home() {
   return (
     <main className={styles.homepage}>
+      <Navbar theme="transparent" />
       <HeroSection />
       <BenefitsSection />
       <MiddleBannerSection />

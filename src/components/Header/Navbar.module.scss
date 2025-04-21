@@ -1,0 +1,167 @@
+.navbar {
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition-delay: 0s;
+    opacity: 1;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    .navbarBrand {
+        @media screen and (min-width: 768px) {
+            display: none;
+        }
+        .logoItem {
+            &:hover,
+            &:focus {
+                background-color: transparent !important;
+            }
+        }
+
+        .navbarItem {
+            .logo {
+                max-height: 3rem;
+                margin-top: -8px;
+            }
+
+            @media all and (max-width: 1023px) {
+                .logoItem {
+                    .logo {
+                        max-height: 2.5rem;
+                        margin-left: -10px;
+                    }
+                }
+            }
+        }
+
+        .burger {
+            background-color: transparent;
+            border: none;
+        }
+    }
+
+    .navbarMenu {
+        -webkit-box-align: center;
+        align-items: center;
+        display: flex;
+        list-style: none;
+        -webkit-box-pack: justify;
+        justify-content: space-between;
+        padding: 0px;
+        width: 100%;
+
+        @media only screen and (min-width: 1024px) {
+            height: 100px;
+            padding: 0px 40px;
+        }
+
+        .navbarEnd {
+            width: 100%;
+            clear: both;
+        }
+        .logoItem {
+            display: ruby;;
+            .logo {
+                max-width: 56px;
+                max-height: 56px;
+            }
+        }
+
+        .navbarItemButton {
+            -webkit-box-align: center;
+            align-items: center;
+            background: rgb(255, 255, 255);
+            border-radius: 100px;
+            border: none;
+            box-shadow: none;
+            color: rgb(56, 56, 56);
+            display: inline-flex;
+            font-family: "Avenir Next", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 1rem;
+            font-weight: 700;
+            line-height: 28px;
+            -webkit-box-pack: center;
+            justify-content: center;
+            position: relative;
+            transition: 0.3s ease-out;
+            z-index: 0;
+            cursor: pointer;
+            width: 100%;
+            outline: none;
+            text-decoration: none;
+            min-height: 48px;
+            min-width: 48px;
+            padding: 0.75rem 1.11rem;
+            max-width: 200px;
+            @media only screen and (min-width: 480px) {
+                font-size: 1.125rem;
+                padding-top: 0.875rem;
+                padding-bottom: 0.875rem;
+                display: inline;
+            }
+        }
+        .navbarItemButtonDark {
+         background: linear-gradient(rgb(36, 119, 170) 0%, rgb(100, 97, 224) 100%); 
+         color: #fff;  
+        }
+
+        .navbarItem {
+            font-size: 18px;
+            font-weight: 700;
+            color: #fff;
+            padding-left: 18px;
+            padding-right: 18px;
+        }
+
+        .navbarItemLeft {
+            display: inline-block;
+            float: left;
+        }
+
+        .navbarItemRight {
+            display: inline-block;
+            float: right;
+            margin-top: 14px;
+        }
+    }
+
+    &.transparentNavbar {
+        background-color: transparent;
+    }
+
+    &.darkNavbar {
+        background-color: #fff;
+        color: rgb(56, 56, 56);
+    }
+
+    &.navbarDecrease {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    &.isDark {
+        background-color: #fff;
+        .navbarItemButton {
+            background: linear-gradient(rgb(36, 119, 170) 0%, rgb(100, 97, 224) 100%);
+            color: #fff;
+        }
+        .navbarEnd {
+            a.navbarItem {
+                color: rgb(56, 56, 56);
+                &:focus {
+                    background: transparent;
+                }
+            }
+
+            &> {
+                a.navbarItem {
+                    &:hover {
+                        background-color: transparent;
+                        color: #fff !important;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+    }
+}
