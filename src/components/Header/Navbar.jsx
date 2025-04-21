@@ -52,11 +52,11 @@ export default function Navbar() {
             <div className={styles.navbarBrand}>
                 <Link href="/" className={`${styles.navbarItem} ${styles.logoItem}`}>
                     <img
-                        src={'https://www.calm.com/_n/favicon.ico'}
-                        width={112}
-                        height={28}
+                        src={isTop ? '/calm-text-white-logo.svg' : '/calm-text-logo.svg'}
+                        width={64}
+                        height={25}
                         alt="Deepak Kumar Jain"
-                        className={styles.logo}
+                        className={styles.mobilelogo}
                     />
                 </Link>
                 <button
@@ -74,7 +74,7 @@ export default function Navbar() {
             <div className={`${styles.navbarMenu} ${menuOpen ? styles.isActive : ''} ${styles.hasTextCentered}`}>
                 <div className={styles.navbarEnd} onClick={() => setMenuOpen(false)}>
                     <div className={styles.navbarItemLeft}>
-                    <Link href="#" className={`${styles.navbarItem} ${styles.logoItem}`}>
+                    <Link href="#" className={`${styles.navbarItem} ${styles.logoItem} ${styles.hideOnMobile}`}>
                         <img
                             src={isTop ? '/calm-logo.svg' : '/calm-text-logo.svg'}
                             width={112}
