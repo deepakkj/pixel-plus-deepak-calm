@@ -11,6 +11,7 @@ const FAQ = () => {
     dangerouslySetInnerHTML={{ __html: answer }}
   />) };
   return (
+    <div className={styles.faq_background}>
     <section className={styles.faq_wrapper}>
       <h2 className={styles.faq_header} id="faq-heading">Frequently Asked Questions</h2>
       <div className={styles.faqlist} aria-labelledby="faq-heading">
@@ -22,6 +23,7 @@ const FAQ = () => {
         )}
       </div>
     </section>
+    </div>
   );
 };
 

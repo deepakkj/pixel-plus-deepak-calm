@@ -1,7 +1,6 @@
 'use client';
 
 import { Accordion, AccordionItem as Item } from '@szhsin/react-accordion';
-import chevronDown from '../../../public/chevron-down.svg';
 import styles from './Accordian.module.scss';
 
 const AccordionItem = ({ header, children }) => (
@@ -9,7 +8,7 @@ const AccordionItem = ({ header, children }) => (
     header={
       <p className={styles.itemBtn}>
         {header}
-        <img className={styles.chevron} src={chevronDown} alt="▼" />
+        <img className={styles.chevron} src={'/chevron-down.svg'} alt="▼" />
       </p>
     }
     className={styles.item}
