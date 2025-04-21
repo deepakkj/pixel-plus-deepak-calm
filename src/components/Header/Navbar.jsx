@@ -107,7 +107,7 @@ export default function Navbar() {
                         <Link
                         type="button"
                         href="#"
-                        className={`${styles.navbarItemButton} ${styles.button} ${styles.isBorderWhite} ${styles.isInverted} ${!isTop ? styles.navbarItemButtonDark : null}`}
+                        className={`${styles.navbarItemButton} ${styles.button} ${styles.isBorderWhite} ${styles.isInverted} ${!isTop ? styles.navbarItemButtonDark : null} ${styles.hideOnMobile}`}
                     >
                         Try Calm for Free
                     </Link>

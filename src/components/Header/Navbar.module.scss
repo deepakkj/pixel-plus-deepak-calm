@@ -172,25 +172,27 @@
     }
 
     &.isDark {
-        background-color: #fff;
-        .navbarItemButton {
-            background: linear-gradient(rgb(36, 119, 170) 0%, rgb(100, 97, 224) 100%);
-            color: #fff;
-        }
-        .navbarEnd {
-            a.navbarItem {
-                color: rgb(56, 56, 56);
-                &:focus {
-                    background: transparent;
-                }
+        @media screen and (min-width: 1024px) {
+            background-color: #fff;
+            .navbarItemButton {
+                background: linear-gradient(rgb(36, 119, 170) 0%, rgb(100, 97, 224) 100%);
+                color: #fff;
             }
-
-            &> {
+            .navbarEnd {
                 a.navbarItem {
-                    &:hover {
-                        background-color: transparent;
-                        color: #fff !important;
-                        font-weight: 600;
+                    color: rgb(56, 56, 56);
+                    &:focus {
+                        background: transparent;
+                    }
+                }
+    
+                &> {
+                    a.navbarItem {
+                        &:hover {
+                            background-color: transparent;
+                            color: #fff !important;
+                            font-weight: 600;
+                        }
                     }
                 }
             }
@@ -223,13 +225,11 @@
 }
 .navbarMenu {
     @media all and (max-width: 1023px) {
-        display: none !important;
         align-items: flex-start;
         inset: 0px;
         color: rgb(255, 255, 255);
-        display: flex;
+        display: none !important;
         flex-direction: column;
-        -webkit-box-pack: start;
         justify-content: flex-start;
         opacity: 1;
         position: fixed;
@@ -241,6 +241,9 @@
         z-index: 999;
         background: linear-gradient(rgb(96, 180, 231) 0%, rgb(100, 97, 224) 100%);
         padding: 64px 0px;
+        &.isActive {
+            display: flex !important;
+        }
         .navbarEnd {
             margin-top: 64px;
             .navbarItemLeft, .navbarItemRight {
