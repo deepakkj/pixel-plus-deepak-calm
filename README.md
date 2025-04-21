@@ -21,6 +21,14 @@ This feature helps the user to control their anger and manage their breathing.
 
 PLEASE TRY THIS OUT and let me know if this has helped you or not.
 
+## Before & After
+
+| Original calm.com | My Clone |
+| :---------------: | :------: |
+| ![Original homepage](public/screenshots/homepage_desktop.png) | ![My clone homepage](public/screenshots/clone-desktop.png) |
+| ![Original mobile](public/screenshots/homepage_mobile_430px.png)   | ![My clone mobile](public/screenshots/clone_homepage_mobile_430px.png)   |
+
+
 
 ## Getting Started Locally
 
