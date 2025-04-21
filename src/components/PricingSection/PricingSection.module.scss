@@ -1,0 +1,333 @@
+.pricingsection_wrapper {
+    margin-bottom: 60px;
+    position: relative;
+
+    @media only screen and (min-width: 768px) {
+        margin-bottom: 100px;
+    }
+}
+
+.pricingsection_background {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+
+    &.fade {
+        mask-image: linear-gradient(180deg,
+                rgba(247, 247, 247, 0) 0%,
+                rgba(247, 247, 247, 0.0885417) 8.85%,
+                #f7f7f7 100%);
+    }
+}
+
+.pricingsection_background_image_container {
+    box-sizing: border-box;
+    display: block;
+    overflow: hidden;
+    width: initial;
+    height: initial;
+    background: none;
+    opacity: 1;
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    inset: 0px;
+}
+
+.pricingsection_container {
+    margin: 0px auto;
+    max-width: 620px;
+    padding: 60px 20px 256px;
+    position: relative;
+    text-align: center;
+    z-index: 1;
+
+    @media only screen and (min-width: 768px) {
+        padding: 0px 0px 330px;
+    }
+}
+
+.pricingsection_heading {
+    color: rgb(26, 62, 111);
+    line-height: 150%;
+    margin: 0px;
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    ;
+
+    @media only screen and (min-width: 480px) {
+        .eOFPJW {
+            margin: 0px;
+            line-height: 60px;
+        }
+    }
+
+    @media only screen and (min-width: 1024px) {
+        font-size: 36px;
+        margin-bottom: 24px;
+    }
+}
+
+.pricingsection_copy {
+    margin: 0 0 20px;
+    font-size: 0.84375rem;
+    line-height: 20px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.6);
+    & > a {
+        text-decoration: underline;
+    }
+
+    @media only screen and (min-width: 1024px) {
+        margin-bottom: 24px;
+    }
+}
+
+.subscriptionInfoWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 32px;
+    margin-bottom: 8px;
+    overflow: visible;
+    list-style: none;
+    padding-left: 0px;
+
+    @media only screen and (min-width: 1024px) {
+        flex-direction: row;
+        column-gap: 16px;
+        margin-bottom: 28px;
+    }
+}
+
+.subscriptioInfoWrapper_item {
+    flex: 1 1 0px;
+}
+
+.subscriptioInfoWrapper_item_button {
+    align-items: center;
+    border-radius: 100px;
+    border: 1px solid rgb(26, 62, 111);
+    box-shadow: none;
+    color: rgb(255, 255, 255);
+    display: inline-flex;
+    font-family: "Avenir Next", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 0.75rem;
+    font-weight: 500;
+    line-height: 24px;
+    justify-content: center;
+    position: relative;
+    transition: 0.3s ease-out;
+    z-index: 0;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+    min-height: 48px;
+    min-width: 48px;
+    background: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    line-height: 150%;
+    min-height: unset;
+    min-width: unset;
+    font-weight: 700;
+    padding: 9px 16px;
+    border-radius: 10px;
+    border-width: 2px;
+    margin-bottom: 12px;
+    text-align: left;
+    width: 100%;
+    position: relative;
+
+    &:focus::before {
+        opacity: 0;
+    }
+
+    &:active::before {
+        box-shadow: none;
+        opacity: 1;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        inset: -2px;
+        border-radius: 10px;
+        height: calc(100% + 4px);
+        width: calc(100% + 4px);
+        // background: rgba(0, 0, 0, 0.15);
+        transition: 0.3s ease-out;
+        z-index: -1;
+    }
+
+    &::after {
+        border-radius: calc(16px);
+        content: "";
+        display: block;
+        position: absolute;
+        inset: 0px;
+        border: 2px solid rgb(26, 62, 111);
+        transition: margin 0.3s ease-out, opacity 0.3s ease-out;
+        margin: 0px;
+        opacity: 0;
+        box-shadow: none;
+    }
+
+    @media only screen and (min-width: 480px) {
+        line-height: 20px;
+    }
+
+    @media only screen and (min-width: 1024px) {
+        margin-bottom: 12px;
+        text-align: left;
+        position: relative;
+        height: 100%;
+        padding: 2px 16px;
+        line-height: 28px;
+        font-size: 1.125rem;
+        min-height: 48px;
+        width: 100%;
+        min-width: 48px;
+        max-width: none;
+        align-items: center;
+        border: 2px solid rgb(26, 62, 111);
+        box-shadow: none;
+        justify-content: center;
+        transition: 0.3s ease-out;
+        z-index: 0;
+        cursor: pointer;
+        outline: none;
+        text-decoration: none;
+        background: #fff;
+    }
+}
+
+.priceInfoWrapper {
+    color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%
+}
+
+.priceInfoWrapper_left {}
+
+.priceInfoWrapper_left_time {
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 24px;
+
+    @media only screen and (min-width: 480px) {
+        line-height: 28px;
+        font-size: 1.125rem;
+    }
+}
+
+.priceInfoWrapper_left_price {
+    font-size: 0.75rem;
+    line-height: 18px;
+
+    @media only screen and (min-width: 480px) {
+        line-height: 20px;
+        font-size: 0.84375rem;
+    }
+}
+
+.priceInfoWrapper_right {}
+
+.subscriptioInfo__time {
+    background: linear-gradient(135deg, rgb(83, 64, 203) 0%, rgb(137, 70, 163) 100%);
+    position: absolute;
+    top: -15px;
+    right: 20px;
+    padding: 6px 12px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    max-height: 33px;
+    z-index: 2;
+
+    > span {
+        font-size: 0.75rem;
+        color: rgb(255, 255, 255);
+        line-height: 18px;
+
+        @media only screen and (min-width: 480px) {
+            line-height: 20px;
+            font-size: 0.84375rem;
+        }
+    }
+}
+
+.pricingsection_cta {
+    align-items: center;
+    background: linear-gradient(rgb(36, 119, 170) 0%, rgb(100, 97, 224) 100%);
+    border-radius: 100px;
+    border: none;
+    box-shadow: none;
+    color: rgb(255, 255, 255);
+    display: inline-flex;
+    font-family: "Avenir Next", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 28px;
+    justify-content: center;
+    position: relative;
+    transition: 0.3s ease-out;
+    z-index: 0;
+    cursor: pointer;
+    width: 100%;
+    outline: none;
+    text-decoration: none;
+    min-height: 48px;
+    min-width: 48px;
+    padding: 0.75rem 1.11rem;
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.15);
+        box-shadow: none;
+        border-radius: 100px;
+        opacity: 0;
+        transition: 0.3s ease-out;
+        z-index: -1;
+    }
+    &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        inset: 0px;
+        border: 2px solid rgb(26, 62, 111);
+        border-radius: 100px;
+        transition: margin 0.3s ease-out, opacity 0.3s ease-out;
+        margin: 0px;
+        opacity: 0;
+        box-shadow: none;
+    }
+    &:active {
+        box-shadow: none;
+        text-shadow: none;
+    }
+    &:active::before {
+        box-shadow: none;
+        opacity: 1;
+    }
+    @media only screen and (min-width: 480px) {
+            padding-top: 0.875rem;
+            padding-bottom: 0.875rem;
+            font-size: 1.125rem;
+    }
+    @media only screen and (min-width: 1024px) {
+        .hXaNDv {
+            max-width: none;
+        }
+    }
+}
