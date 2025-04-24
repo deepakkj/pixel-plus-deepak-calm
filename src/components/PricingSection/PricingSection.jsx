@@ -30,7 +30,7 @@ const PricingSection = () => {
               role="radio"
               aria-checked="true"
               type="button"
-              tabindex="0">
+              tabIndex="0">
               <div className={styles.priceInfoWrapper}>
                 <div className={styles.priceInfoWrapper_left}>
                   <span className={styles.priceInfoWrapper_left_time}>Yearly<br /></span>

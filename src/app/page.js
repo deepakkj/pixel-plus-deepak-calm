@@ -1,13 +1,13 @@
-import HeroSection from '../components/Hero';
-import BenefitsSection from '../components/BenefitsSection';
+import HeroSection from '../components/HeroSection/Hero';
+import BenefitsSection from '../components/BenefitsSection/BenefitsSection';
 import ReviewsSection from '../components/ReviewsSection/ReviewsSection';
 import PricingSection from '../components/PricingSection/PricingSection';
 import BlogSection from '../components/BlogSection/BlogSection';
 import FAQSection from '../components/FAQSection/FAQ';
-import Footer from '../components/Footer';
+import Footer from '../components/Footer/Footer';
 
 import styles from './homepage.module.scss';
-import MiddleBannerSection from '../components/MiddleBannerSection';
+import MiddleBannerSection from '../components/MiddleBannerSection/MiddleBannerSection';
 import Navbar from '../components/Header/Navbar';
 import BreathingWidget from '../components/BreathingWidget/BreathingWidget';
 
