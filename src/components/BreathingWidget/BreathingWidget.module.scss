@@ -1,0 +1,42 @@
+.breathingWidget_container {
+  padding: 80px 15px;
+  background: linear-gradient(rgba(226, 234, 255, 0) 0%, rgb(226, 234, 255) 100%)
+}
+.breathingWidget_title {
+  color: #1a3e6f;
+  text-align: center;
+  margin-bottom: 1.5rem
+}
+.breathingWidget_description {
+  color: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  .breathingCircle {
+    position: relative;
+    background: linear-gradient(-45deg, #ff6ec4, #7873f5, #43e97b, #38f9d7);
+    background-size: 400% 400%;
+    animation: gradientShift 20s ease infinite;
+    border-radius: 100%;
+    margin-bottom: 64px;
+  }
+
+  .startButton {
+    background: linear-gradient(rgb(36, 119, 170) 0%, rgb(100, 97, 224) 100%);
+    &:hover {
+      scale: 1.05;
+    }
+  }
+
+
+  .stopButton {
+    background: linear-gradient(rgb(255, 106, 0) 0%, rgb(248, 0, 0) 100%);
+    &:hover {
+      scale: 1.05;
+    }
+  }

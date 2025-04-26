@@ -10,15 +10,16 @@ import styles from './homepage.module.scss';
 import MiddleBannerSection from '../components/MiddleBannerSection/MiddleBannerSection';
 import Navbar from '../components/Header/Navbar';
 import BreathingWidget from '../components/BreathingWidget/BreathingWidget';
+import AmbientMixer from '../components/AmbientMixer/AmbientMixer';
+import MoodTracker from '@/components/MoodTracker/MoodTracker';
 
 export default function Home() {
   return (
     <main className={styles.homepage}>
       <Navbar theme="transparent" />
       <HeroSection />
-      <section className="my-12 flex justify-center">
-          <BreathingWidget />
-        </section>
+      <BreathingWidget />
+      <AmbientMixer />
       <BenefitsSection />
       <MiddleBannerSection />
       <ReviewsSection />
@@ -26,6 +27,7 @@ export default function Home() {
       <BlogSection />
       <FAQSection />
       <Footer />
+      <MoodTracker />
     </main>
   );
 }

@@ -163,7 +163,54 @@ p {
   }
 }
 
+button {
+  cursor: pointer;
+}
+
 .szh-accordion__item-btn {
   width: 100%;
   padding: 10px 0;
+}
+
+.embla {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 10px;
+}
+
+.embla__viewport {
+  overflow: hidden;
+  width: 100%;
+}
+
+.embla__container {
+  display: flex;
+}
+
+.embla__slide {
+  flex: 0 0 100%; /* one slide per view */
+  padding: 0 2rem;
+  text-align: center;
+
+}
+
+.embla__slide__card {
+  max-height: 35vh;
+  overflow-y: scroll;
+}
+
+.embla__arrows {
+  position: absolute;
+    height: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0;
+}
+
+.embla__arrows.left{
+left: 0;
+}
+.embla__arrows.right{
+  right: 0;
 }

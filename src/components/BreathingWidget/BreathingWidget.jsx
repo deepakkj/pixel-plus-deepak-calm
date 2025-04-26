@@ -3,6 +3,8 @@
 
 import { useState, useRef, useEffect } from 'react';
 import { motion } from 'framer-motion';
+import styles from './BreathingWidget.module.scss';
+import { CirclePlay, CircleStop } from 'lucide-react';
 
 // Breathing phases: inhale, hold, exhale
 const phases = [
@@ -40,58 +42,44 @@ export default function BreathingWidget() {
   const { scale, opacity, duration, label } = phases[phaseIdx];
 
   return (
-    <div>
-      <h2 className="text-lg md:text-4xl font-semibold text-[#1a3e6f] text-center mb-6">
-        Pause &amp; Breathe: Your Moment of Calm
+    <section className={styles.breathingWidget_container}>
+      <h2 className={`${styles.breathingWidget_title} text-lg md:text-4xl font-semibold`}>
+        Take a Deep Breath Now
       </h2>
+      <p className={`${styles.breathingWidget_description}`}>
+        Experience the power of guided breathing to calm your mind, reduce stress, and restore focus anytime, anywhere.
+      </p>
       <br />
       <div className="max-w-md mx-auto flex flex-col items-center space-y-6">
-
-
-
         {/* Card container */}
-        <div className="p-8 bg-white rounded-2xl shadow-lg flex flex-col items-center space-y-8">
-          {/* Animated breathing circle with wavy gradient */}
-          <motion.div
-            className="relative rounded-full animated-gradient"
-            style={{ width: '14rem', height: '14rem' }}
-            animate={{ scale, opacity }}
-            transition={{ duration, ease: 'easeInOut' }}
-          >
-            <span className="absolute inset-0 flex items-center justify-center text-white font-bold text-2xl">
-              {label}
-            </span>
-          </motion.div>
+        {/* Animated breathing circle with wavy gradient */}
+        <motion.div
+          className={styles.breathingCircle}
+          style={{ width: '14rem', height: '14rem' }}
+          animate={{ scale, opacity }}
+          transition={{ duration, ease: 'easeInOut' }}
+        >
+          <span className="absolute inset-0 flex items-center justify-center text-white font-bold text-2xl">
+            {label}
+          </span>
+        </motion.div>
 
-          {/* Start/Stop button */}
-          <button
-            onClick={handleToggle}
-            className={
-              `px-8 py-3 rounded-full text-white font-semibold transition-all ` +
-              (isRunning
-                ? 'bg-red-500 hover:bg-red-600'
-                : 'bg-blue-600 hover:bg-blue-700')
-            }
-          >
-            {isRunning ? 'Stop' : 'Start'}
-          </button>
-        </div>
+        {/* Start/Stop button */}
+        <button
+          onClick={handleToggle}
+          className={
+            `px-8 py-3 rounded-full text-white font-semibold transition-all flex justify-content-center align-items-center place-items-center ` +
+            (isRunning
+              ? styles.stopButton
+              : styles.startButton)
+          }
+        >
+          {isRunning ? <CircleStop className="w-5 h-5 mr-2" /> : <CirclePlay className="w-5 h-5 mr-2" />}
+           <span>{isRunning ? 'Stop' : 'Start'}</span>
+        </button>
 
-        {/* Gradient Animation Keyframes */}
-        <style jsx global>{`
-  @keyframes gradientShift {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-  }
-  .animated-gradient {
-    background: linear-gradient(-45deg, #ff6ec4, #7873f5, #43e97b, #38f9d7);
-    background-size: 400% 400%;
-    animation: gradientShift 20s ease infinite;
-  }
-`}</style>
       </div>
-    </div>
+    </section>
 
   );
 }
