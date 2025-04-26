@@ -33,7 +33,7 @@ export default function Navbar() {
     const getNavbarClass = () => {
         if (menuOpen) {
             return isTop
-                ? `${styles.darkNavbar} ${styles.isDark}`
+                ? `${styles.transparentNavbar} ${styles.isTransparent}`
                 : `${styles.darkNavbar} ${styles.isDark} ${styles.navbarDecrease}`;
         }
         return isTop
@@ -46,7 +46,7 @@ export default function Navbar() {
     return (
         <nav
             ref={toggleRef}
-            className={`${styles.navbar} ${styles.isSpaced} ${styles.isFixedTop} ${getNavbarClass()}`}
+            className={`${styles.navbar} ${getNavbarClass()}`}
             aria-label="main navigation"
         >
             <div className={styles.navbarBrand}>
@@ -71,7 +71,7 @@ export default function Navbar() {
                 </button>
             </div>
 
-            <div className={`${styles.navbarMenu} ${menuOpen ? styles.isActive : ''} ${styles.hasTextCentered}`}>
+            <div className={`${styles.navbarMenu} ${menuOpen ? styles.isActive : ''}`}>
                 <div className={styles.navbarEnd} onClick={() => setMenuOpen(false)}>
                     <div className={styles.navbarItemLeft}>
                     <Link href="#" className={`${styles.navbarItem} ${styles.logoItem} ${styles.hideOnMobile}`}>
