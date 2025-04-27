@@ -62,9 +62,9 @@ Open the modal, pick an emoji, jot a 140-char note, and review your last five en
 ## Before & After
 
 | Original Calm.com | My Clone |
-| :---------------: | :------: |
+| :------: | :------: |
 | <img src="public/screenshots/homepage_desktop.png" alt="Original desktop" width="300" align="top" /> | <img src="public/screenshots/clone-desktop.png" alt="Clone desktop" width="300" align="top" /> |
-| <img src="public/screenshots/homepage_mobile_430px.png" alt="Original mobile" width="200" align="top" /> | <img src="public/screenshots/clone_homepage_mobile_430px.png" alt="Clone mobile" width="200" align="top" /> |
+| <img src="public/screenshots/homepage_mobile_430px.png" alt="Original mobile" width="300" align="top" /> | <img src="public/screenshots/clone_homepage_mobile_430px.png" alt="Clone mobile" width="300" align="top" /> |
 
 ---
 
