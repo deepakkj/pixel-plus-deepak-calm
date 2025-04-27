@@ -24,5 +24,23 @@ export const blogPosts = [
         caption: 'Relationships',
         title: 'How to communicate better with all the people in your life',
         link: 'https://www.calm.com/blog/how-to-communicate-better'
+    },
+    {
+        assetUrl: 'https://images.squarespace-cdn.com/content/v1/656f4e4dababbd7c042c4946/1744162528720-D3COT57SGGOIZ4WJQPAS/tonglen+meditation-1x1.jpg',
+        caption: 'Meditation & Mindfulness',
+        title: 'What is Tonglen meditation? A guide to getting started',
+        link: 'https://www.calm.com/blog/tonglen-meditation'
+    },
+    {
+        assetUrl: 'https://images.squarespace-cdn.com/content/v1/656f4e4dababbd7c042c4946/1743747462433-BBC29D9ELNI3NJU0W8MM/ENFP-1x1.jpg',
+        caption: 'Personal Growth',
+        title: '10 characteristics of the campaigner personality type (ENFP)',
+        link: 'https://www.calm.com/blog/enfp'
+    },
+    {
+        assetUrl: 'https://images.squarespace-cdn.com/content/v1/656f4e4dababbd7c042c4946/1743747786997-HCVL45TTYMWU5REXMXNG/sleep+walking-1x1.jpg',
+        caption: 'Sleep',
+        title: 'What is sleepwalking? Plus, 7 tips to help you manage it',
+        link: 'https://www.calm.com/blog/sleep-walking'
     }
 ];
