@@ -1,49 +1,85 @@
-
 # pixel-plus-deepak-calm
-A clone of the Calm website Homepage developed as part of the Pixel Plus Hackathon.
 
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+A pixel-perfect clone of Calm’s homepage built for the Pixel Plus Hackathon using Next.js.
 
+[Live Demo](https://pixel-plus-deepak-calm.vercel.app/) · [Original Site](https://www.calm.com/)  
 
-Original Website Link: [calm.com](https://www.calm.com/)
+---
 
-This app is hosted at: [pixel-plus-deepak-calm](https://pixel-plus-deepak-calm.vercel.app/)
+## Table of Contents
 
+- [About](#about)  
+- [Features](#features)  
+  - [1. Guided Breathing](#1-guided-breathing)  
+  - [2. Ambient Sound Mixer](#2-ambient-sound-mixer)  
+  - [3. Mood Tracker](#3-mood-tracker)  
+- [Before & After](#before--after)  
+- [Getting Started](#getting-started)  
+- [Tech Stack](#tech-stack)  
+- [License](#license)  
+- [Contact](#contact)  
 
-## Description
-The scope of this application is only the homepage of the calm.com
-It tries to mimick pixel perfection.
-It does not integrate with any backend servers or apis.
-It is only the frontend that is rendered via Next Js.
-It has 3 new special features which is added as part per the Hackathon requirement. Read below for more information.
+---
 
-## BONUS SECTION / SPECIAL / NEW FEATURES
-This app has special Bonus features which is not found in the original site. It was developed as part of the requirement of the Hackathon
+## About
 
-Those features are:
-1. Take a Deep Breath Now - This feature helps the user to control their anger, regain calm and restore focus of the mind by guided breathing.
-![Take a Deep Breath Now](public/screenshots/guidedbreathing.png)
-2. Relax Your Mind - This feature helps the user to concentrate, medidate or just unwind by listening to soothing music which can be customized as per user's preference.
-![Relax Your Mind](public/screenshots/ambientmixer.png)
-3. Mood Tracker - This feature lets users to note their emotions/feelings and revisit their previous feelings so that they are aware of their of emotions and take necessary remedy steps accordingly. This feature can be accessed by clicking on the smiling button in bottom right of the screen (also called as 'How do you feel?' in Desktop mode).
-![Mood Tracker](public/screenshots/moodtracker.png)
+This **Next.js** project recreates Calm’s homepage with pixel-perfect fidelity.  
+No backend or external APIs—just a fully server-rendered, interactive front end.  
 
-PLEASE TRY THIS OUT and let me know if this has helped you or not.
+---
 
+## Features
+
+Beyond the original design, I’ve added **three** bonus features to showcase interactivity, animations, and state persistence:
+
+### 1. Guided Breathing
+
+**“Take a Deep Breath Now”**  
+A pulsing gradient circle guides you through inhale, hold, and exhale cycles—perfect for a quick pause in your day.  
+
+<img src="public/screenshots/guidedbreathing.png" alt="Guided Breathing" width="300" />
+
+---
+
+### 2. Ambient Sound Mixer
+
+**“Start Mixing Your Calm Now”**  
+Blend rain, ocean waves, and white noise to create a personalized soundscape for focus, relaxation, or sleep.  
+
+<img src="public/screenshots/ambientmixer.png" alt="Ambient Sound Mixer" width="300" />
+
+---
+
+### 3. Mood Tracker
+
+**“How do you feel?”**  
+Open the modal, pick an emoji, jot a 140-char note, and review your last five entries in a smooth carousel—data lives in `localStorage`.  
+
+<img src="public/screenshots/moodtracker.png" alt="Mood Tracker" width="300" />
+
+---
 
 ## Before & After
 
-| Original calm.com | My Clone |
-| :---------------: | :------: |
-| ![Original homepage](public/screenshots/homepage_desktop.png) | ![My clone homepage](public/screenshots/clone-desktop.png) |
-| ![Original mobile](public/screenshots/homepage_mobile_430px.png)   | ![My clone mobile](public/screenshots/clone_homepage_mobile_430px.png)   |
+| Original Calm.com            | My Clone                       |
+| :--------------------------: | :----------------------------: |
+| <img src="public/screenshots/homepage_desktop.png" alt="Original desktop" width="300" /> | <img src="public/screenshots/clone-desktop.png" alt="Clone desktop" width="300" /> |
+| <img src="public/screenshots/homepage_mobile_430px.png" alt="Original mobile" width="300" /> | <img src="public/screenshots/clone_homepage_mobile_430px.png" alt="Clone mobile" width="300" /> |
 
+---
 
-## Getting Started Locally
+## Getting Started
 
-First, run the development server:
+Clone and install dependencies:
 
 ```bash
+git clone https://github.com/deepakkj/pixel-plus-deepak-calm.git
+cd pixel-plus-deepak-calm
+npm install
+
+Then, run the development server:
+
+bash
 npm run dev
 # or
 yarn dev
@@ -51,21 +87,13 @@ yarn dev
 pnpm dev
 # or
 bun dev
-```
+
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+You can start editing the page by modifying app/page.js. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-
-## Tech Stack
-React Js
-Next Js
-SCSS
-Tailwind CSS
-Vercel for hosting the app
+This project uses [next/font](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
 
 ## License
