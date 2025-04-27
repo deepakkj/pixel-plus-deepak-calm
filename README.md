@@ -22,11 +22,11 @@ This app has special Bonus features which is not found in the original site. It 
 
 Those features are:
 1. Take a Deep Breath Now - This feature helps the user to control their anger, regain calm and restore focus of the mind by guided breathing.
-[Take a Deep Breath Now](public/screenshots/guidedbreathing.png)
+![Take a Deep Breath Now](public/screenshots/guidedbreathing.png)
 2. Relax Your Mind - This feature helps the user to concentrate, medidate or just unwind by listening to soothing music which can be customized as per user's preference.
-[Relax Your Mind](public/screenshots/ambientmixer.png)
+![Relax Your Mind](public/screenshots/ambientmixer.png)
 3. Mood Tracker - This feature lets users to note their emotions/feelings and revisit their previous feelings so that they are aware of their of emotions and take necessary remedy steps accordingly. This feature can be accessed by clicking on the smiling button in bottom right of the screen (also called as 'How do you feel?' in Desktop mode).
-[Mood Tracker](public/screenshots/moodtracker.png)
+![Mood Tracker](public/screenshots/moodtracker.png)
 
 PLEASE TRY THIS OUT and let me know if this has helped you or not.
 
