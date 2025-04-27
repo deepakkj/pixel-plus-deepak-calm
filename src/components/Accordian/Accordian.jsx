@@ -1,4 +1,3 @@
-'use client';
 
 import { Accordion, AccordionItem as Item } from '@szhsin/react-accordion';
 import styles from './Accordian.module.scss';

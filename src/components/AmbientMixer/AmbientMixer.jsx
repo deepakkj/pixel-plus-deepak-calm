@@ -1,4 +1,3 @@
-// src/components/AmbientMixer/AmbientMixer.jsx
 'use client';
 
 import { useState, useRef, useEffect } from 'react';

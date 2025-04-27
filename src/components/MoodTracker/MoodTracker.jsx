@@ -1,4 +1,3 @@
-// src/components/MoodTracker/MoodTracker.jsx
 'use client';
 
 import { useState, useEffect } from 'react';
