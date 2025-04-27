@@ -8,7 +8,7 @@
     top: 0;
     z-index: 2;
     .navbarBrand {
-        @media screen and (min-width: 768px) {
+        @media screen and (min-width: 1100px) {
             display: none;
         }
         .logoItem {
@@ -24,7 +24,7 @@
                 margin-top: -8px;
             }
 
-            @media all and (max-width: 1023px) {
+            @media all and (max-width: 1099px) {
                 .logoItem {
                     .logo {
                         max-height: 2.5rem;
@@ -97,12 +97,11 @@
         justify-content: space-between;
         padding: 0px;
         width: 100%;
-
-        @media all and (min-width: 1024px) {
+        @media all and (min-width: 1100px) {
             height: 100px;
             padding: 0px 40px;
         }
-        @media all and (max-width: 1023px) {
+        @media all and (max-width: 1099px) {
             align-items: flex-start;
             inset: 0px;
             color: rgb(255, 255, 255);
@@ -179,7 +178,7 @@
             min-width: 48px;
             padding: 0.75rem 1.11rem;
             max-width: 200px;
-            @media only screen and (min-width: 480px) {
+            @media only all and (min-width: 480px) {
                 font-size: 1.125rem;
                 padding-top: 0.875rem;
                 padding-bottom: 0.875rem;
@@ -226,7 +225,7 @@
     }
 
     &.isDark {
-        @media screen and (min-width: 1024px) {
+        @media screen and (min-width: 1100px) {
             background-color: #fff;
             .navbarItemButton {
                 background: linear-gradient(rgb(36, 119, 170) 0%, rgb(100, 97, 224) 100%);
@@ -255,7 +254,7 @@
 }
 
 .hideOnMobile {
-    @media all and (max-width: 1023px) {
+    @media all and (max-width: 1099px) {
         display: none !important;
     }
 }
@@ -265,7 +264,7 @@
 }
 
 .navbarBrand {
-    @media all and (max-width: 1023px) {
+    @media all and (max-width: 1099px) {
         display: flex;
         justify-content: space-between;
         &.isActive {

@@ -4,7 +4,6 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
 import Link from 'next/link';
 import styles from './Navbar.module.scss';
-// import { IMG_LOGO } from '../../images';
 
 export default function Navbar() {
     const [isTop, setIsTop] = useState(true);

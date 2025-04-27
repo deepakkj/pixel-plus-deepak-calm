@@ -1,16 +1,15 @@
-// src/components/BreathingWidget/BreathingWidget.jsx
 'use client';
 
 import { useState, useRef, useEffect } from 'react';
-import { motion } from 'framer-motion';
 import styles from './BreathingWidget.module.scss';
 import { CirclePlay, CircleStop } from 'lucide-react';
+import Image from 'next/image';
 
 // Breathing phases: inhale, hold, exhale
 const phases = [
-  { scale: 1, opacity: 0.5, duration: 4, label: 'Breathe In' },
-  { scale: 1.3, opacity: 0.7, duration: 2, label: 'Hold' },
-  { scale: 1, opacity: 0.5, duration: 6, label: 'Breathe Out' },
+  { scale: 1, opacity: 0.5, duration: 4, label: 'Breathe In', color: '#4CAF50' },
+  { scale: 1.3, opacity: 0.7, duration: 8, label: 'Hold', color: '#FF9800' },
+  { scale: 1, opacity: 0.5, duration: 6, label: 'Breathe Out', color: '#2b7fff' },
 ];
 
 export default function BreathingWidget() {
@@ -39,7 +38,7 @@ export default function BreathingWidget() {
 
   useEffect(() => () => clearTimeout(timerRef.current), []);
 
-  const { scale, opacity, duration, label } = phases[phaseIdx];
+  const { scale, opacity, duration, label, color } = phases[phaseIdx];
 
   return (
     <section className={styles.breathingWidget_container}>
@@ -49,20 +48,21 @@ export default function BreathingWidget() {
       <p className={`${styles.breathingWidget_description}`}>
         Experience the power of guided breathing to calm your mind, reduce stress, and restore focus anytime, anywhere.
       </p>
-      <br />
-      <div className="max-w-md mx-auto flex flex-col items-center space-y-6">
+      <div className="text-center items-center justify-center flex flex-col">
         {/* Card container */}
-        {/* Animated breathing circle with wavy gradient */}
-        <motion.div
-          className={styles.breathingCircle}
-          style={{ width: '14rem', height: '14rem' }}
-          animate={{ scale, opacity }}
-          transition={{ duration, ease: 'easeInOut' }}
-        >
-          <span className="absolute inset-0 flex items-center justify-center text-white font-bold text-2xl">
-            {label}
+        <div className={styles.breathingWaves}>
+        <Image
+                    alt="Breathing Waves"
+                    loading="lazy"
+                    layout="fill"
+                    objectFit="contain"
+                    objectPosition="center center"
+                    src={isRunning ? "transparent-sound-wave-visualization.svg": "transparent-sound-wave-static.svg"}
+                  />
+          <span className={styles.breathingLabel} style={{ scale, color: isRunning ? color : 'rgb(112 224 255)' }}>
+            {isRunning ? label : 'Lets Go!'}
           </span>
-        </motion.div>
+        </div>
 
         {/* Start/Stop button */}
         <button

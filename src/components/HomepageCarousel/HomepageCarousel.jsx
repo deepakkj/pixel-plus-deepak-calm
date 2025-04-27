@@ -15,7 +15,7 @@ const HomepageCarousel = ({
     slideGap: _slideGap,
 }) => {
     const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
-    const [slideWidth, setSlideWidth] = useState();
+    const [slideWidth, setSlideWidth] = useState(0);
     const [slideHeight, setSlideHeight] = useState();
     const [slideInnerHeight, setSlideInnerHeight] = useState('auto');
     const [isReady, setIsReady] = useState(false);
