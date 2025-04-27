@@ -1,12 +1,16 @@
 .ambientMixer_container {
     position: relative;
     width: 100%;
-    background:  linear-gradient(rgba(226, 234, 255, 0) 0%, rgb(226, 234, 255) 100%);
+    background:  linear-gradient(rgba(137, 93, 31, 0.3) 60%, rgba(137, 93, 31, 0.5) 100%);
+    background-image: url('/beach.png');
     background-size: cover;
-    background-position: center;
+    background-position: 50% 70%;
     animation: fade-in 1s ease-out forwards;
     padding: 120px 10px;
     margin: 0 0 40px 0;
+    @media screen and (max-width: 768px) {
+        background-position: 10% 10%;
+    }
 }
 
 .ambientMixer_description {
@@ -18,10 +22,12 @@
         font-weight: 700;
         line-height: 1.2;
         margin-bottom: 1.5rem;
-        color: #1a3e6f;
+        color: #fff;
+        text-shadow: 2px 2px 10px #000000;
     }
     p {
-        color: rgba(0, 0, 0, 0.8);
+        color: #fff;
+        text-shadow: 2px 2px 10px #000000;
     }
     &.darkdescription {
         color: #fff;

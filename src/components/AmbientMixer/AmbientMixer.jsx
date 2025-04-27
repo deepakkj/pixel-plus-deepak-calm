@@ -8,9 +8,9 @@ import styles from './AmbientMixer.module.scss';
 
 // Ambient tracks + background GIFs
 const tracks = [
-  { name: 'Rain',        file: '/sounds/rain.mp3',        icon: CloudRain  },
-  { name: 'Waves',       file: '/sounds/waves.mp3',       icon: Waves      },
-  { name: 'White Noise', file: '/sounds/white-noise.mp3', icon: Volume2    },
+  { name: 'Rain', file: '/sounds/rain.mp3', icon: CloudRain },
+  { name: 'Waves', file: '/sounds/waves.mp3', icon: Waves },
+  { name: 'White Noise', file: '/sounds/white-noise.mp3', icon: Volume2 },
 ];
 const backgroundMap = {
   'Rain': '/gifs/rain.gif',
@@ -72,7 +72,7 @@ export default function AmbientMixer() {
                   ? 'bg-green-500 text-white hover:bg-green-600'
                   : 'bg-gray-200 text-gray-800 hover:bg-gray-300')
               }
-           >
+            >
               <Icon className="w-5 h-5 mr-2" />
               <span>{playing[name] ? `Stop ${name}` : `Play ${name}`}</span>
             </button>
